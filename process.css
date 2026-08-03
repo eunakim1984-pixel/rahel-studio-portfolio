@@ -1,6 +1,6 @@
 :root {
-  --paper: #efeeeb;
-  --paper-deep: #efeeeb;
+  --paper: #e5e1de;
+  --paper-deep: #e5e1de;
   --ink: #181816;
   --muted: #66645f;
   --line: rgba(24, 24, 22, 0.18);
@@ -66,7 +66,7 @@ button:focus-visible,
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   border-bottom: 1px solid var(--line);
-  background: rgba(239, 238, 235, .92);
+  background: rgba(229, 225, 222, .92);
   backdrop-filter: blur(16px);
 }
 
