@@ -1,6 +1,6 @@
 :root {
-  --paper: #faf8f5;
-  --paper-deep: #efede8;
+  --paper: #efeeeb;
+  --paper-deep: #efeeeb;
   --ink: #181816;
   --muted: #66645f;
   --line: rgba(24, 24, 22, 0.18);
@@ -24,9 +24,8 @@ body {
   margin: 0;
   min-width: 320px;
   background-color: var(--paper);
-  background-image:
-    radial-gradient(circle at 12% 6%, rgba(255,255,255,.82), transparent 27%),
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paper'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paper)' opacity='.035'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paper'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paper)' opacity='.026'/%3E%3C/svg%3E");
+  background-attachment: fixed;
   color: var(--ink);
   line-height: 1.65;
   letter-spacing: -0.02em;
@@ -67,7 +66,7 @@ button:focus-visible,
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   border-bottom: 1px solid var(--line);
-  background: rgba(250, 248, 245, .9);
+  background: rgba(239, 238, 235, .92);
   backdrop-filter: blur(16px);
 }
 
@@ -87,6 +86,15 @@ button:focus-visible,
 .topbar nav a:hover { color: var(--ink); }
 
 main { overflow: clip; }
+
+.process-hero,
+.case-layout,
+.case-study,
+.ux-lab,
+.principles,
+footer {
+  background: transparent;
+}
 
 .process-hero {
   width: min(calc(100% - 48px), var(--max));
@@ -320,7 +328,7 @@ code { padding: 2px 5px; background: rgba(24,24,22,.06); color: inherit; font-si
   margin-top: 18px;
   grid-template-columns: 1.05fr .95fr;
   border: 1px solid var(--line);
-  background: rgba(255,255,255,.34);
+  background: transparent;
 }
 
 .lab-copy-block,
@@ -336,7 +344,7 @@ code { padding: 2px 5px; background: rgba(24,24,22,.06); color: inherit; font-si
 
 .flow-steps { display: grid; gap: 8px; }
 .flow-steps button { width: 100%; padding: 0 16px; text-align: left; }
-.flow-result { min-height: 142px; margin-top: 22px; padding: 22px; background: var(--accent-soft); }
+.flow-result { min-height: 142px; margin-top: 22px; padding: 22px; border-top: 1px solid var(--line); background: transparent; }
 .flow-result strong,
 .flow-result span { display: block; }
 .flow-result strong { font-size: 1.1rem; }
