@@ -26,17 +26,14 @@
         />
         <nav class="reference-nav" aria-label="상단 이미지 메뉴">
           <a class="reference-nav-profile" href="#card" aria-label="프로필로 이동"></a>
+          <a class="reference-nav-data" href="#portfolio" aria-label="데이터로 이동"></a>
           <a class="reference-nav-portfolio" href="#portfolio" aria-label="포트폴리오로 이동"></a>
+          <a class="reference-nav-process" href="process.html" aria-label="문제해결 페이지로 이동"></a>
           <a class="reference-nav-contact" href="#contact" aria-label="상담으로 이동"></a>
         </nav>
       </section>
 
-      <section class="card-section" id="card" aria-labelledby="card-title">
-        <div class="card-heading">
-          <h1 id="card-title">Rahel Studio</h1>
-          <p>명함을 클릭하면 프로필이 보입니다.</p>
-        </div>
-
+      <section class="card-section" id="card" aria-label="프로필 명함">
         <button
           class="business-card"
           type="button"
@@ -51,12 +48,14 @@
                 height="1024"
                 alt="Rahel Studio 흰색 명함"
               />
+              <span class="card-flip-hint">프로필 CLICK <b aria-hidden="true">↗</b></span>
             </span>
             <span class="card-face card-back" aria-hidden="true">
               <span class="card-back-copy">
-                <strong>RAHEL</strong>
-                <span>H전문대학교 항공운항과 졸업</span>
-                <span>K대학교 디자인학과 졸업</span>
+                <span class="card-back-kicker">RAHEL STUDIO · PROFILE</span>
+                <strong>H전문대학교 항공운항과 졸업</strong>
+                <strong>K대학교 디자인학과 졸업</strong>
+                <i aria-hidden="true"></i>
                 <span>10년 동안 웹사이트 평가</span>
               </span>
             </span>
@@ -72,6 +71,7 @@
 
         <article
           class="project project-split"
+          id="process"
           data-project="cheong"
           data-pages="21"
           data-title="청 한복"
